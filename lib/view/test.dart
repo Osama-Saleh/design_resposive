@@ -48,17 +48,19 @@ class TestView extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Container(
-          height: MediaQuery.of(context).size.height,
+          height: 800,
           width: MediaQuery.of(context).size.width,
           color: Colors.amber,
           child: Stack(
             alignment: Alignment.topCenter,
             children: [
+              //*=================================
+              //*==========center card============
+              //*=================================
               Positioned(
                 child: Container(
                   height: 50.h,
-                  width: 90.w,
-                  // color: Colors.white,
+                  width: 80.w,
                   child: Stack(
                     alignment: Alignment.bottomCenter,
                     children: [
@@ -90,11 +92,14 @@ class TestView extends StatelessWidget {
                   ),
                 ),
               ),
+              //*=================================
+              //*=====card of number track========
+              //*=================================
               Positioned(
                 top: 180.sp,
                 child: Container(
-                  height: 110.sp,
-                  width: 240.sp,
+                  height: 100.sp,
+                  width: 200.sp,
                   decoration: BoxDecoration(
                     color: HexColor("#FFFFFF"),
                     borderRadius: BorderRadius.circular(15),
@@ -114,12 +119,12 @@ class TestView extends StatelessWidget {
                             size: 25.sp,
                           ),
                           SizedBox(
-                            width: 20.sp,
+                            width: 10.sp,
                           ),
                           Text(
                             "Enter Track Number",
                             style: TextStyle(
-                                fontSize: 18.sp,
+                                fontSize: 12.sp,
                                 color: Colors.black.withOpacity(.5)),
                           )
                         ],
@@ -129,7 +134,7 @@ class TestView extends StatelessWidget {
                         color: Colors.black.withOpacity(.5),
                       ),
                       Container(
-                        height: 40.sp,
+                        height: 35.sp,
                         width: 200.sp,
                         child: ElevatedButton(
                             onPressed: () {},
@@ -151,7 +156,7 @@ class TestView extends StatelessWidget {
                 ),
               ),
               Positioned(
-                top: 370.sp,
+                top: 285.sp,
                 left: 10.sp,
                 child: Container(
                   width: MediaQuery.of(context).size.width,
@@ -163,7 +168,7 @@ class TestView extends StatelessWidget {
                 ),
               ),
               Positioned(
-                top: 355.sp,
+                top: 277.sp,
                 right: 10.sp,
                 child: TextButton(
                     onPressed: () {},
@@ -176,7 +181,7 @@ class TestView extends StatelessWidget {
                     )),
               ),
               Positioned(
-                top: 410.sp,
+                top: 30.sp,
                 child: Container(
                     height: 160.sp,
                     width: MediaQuery.of(context).size.width,
